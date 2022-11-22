@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Claint from '../Claint/Claint';
-
+import './Claints.css';
 const Claints = () => {
     const [claints, setClaints] = useState([]);
     useEffect(() => {
@@ -51,7 +51,7 @@ const Claints = () => {
         ]
     };
     return (
-        <div className='text-center'>
+        <div className='text-center my-5 all-claints'>
             <h1 className='my-5'>Happy Claint Says</h1>
             <Slider {...settings}>
                 {

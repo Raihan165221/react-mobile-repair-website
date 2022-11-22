@@ -5,7 +5,7 @@ const Claint = ({ claint }) => {
     const { name, img, said, rating } = claint;
     return (
 
-        <div className='w-75 mx-auto text-center claint-card'>
+        <div className='mx-auto text-center claint-card'>
             <img className='mx-auto' src={img} alt="" />
             <h2>{name}</h2>
             <p>{said}</p>

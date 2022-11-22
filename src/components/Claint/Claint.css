@@ -1,7 +1,7 @@
 .claint-card {
     padding: 20px;
     border: 1px solid rgb(221, 209, 209);
-
+    width: 95%;
 }
 
 .claint-card:hover {
