@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Computer Repair",
+        "title": "Our trained service providers are trained to handle all types of Desktop PC problems and issues and are able to deliver the right solution for your product.",
+        "img": "https://img.freepik.com/free-photo/technician-repairing-computer-computer-hardware-repairing-upgrade-technology_1150-8854.jpg?auto=format&h=200"
+    },
+    {
+        "id": 2,
+        "name": "Laptop Repair",
+        "title": "Our service center is able to fix all types of problems regarding your Laptop and Notebook. Our employees are highly trained and has lots of experience.",
+        "img": "https://img.freepik.com/free-photo/man-assembling-circuit-board-laptop_1098-14260.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph"
+    },
+    {
+        "id": 3,
+        "name": "Mobile Repair",
+        "title": "Repair guides and disassembly information for phones from all manufacturers and service providers, including Apple iPhone and Samsung Galaxy.",
+        "img": "https://img.freepik.com/free-photo/technician-antistatic-gloves-using-screwdriver-disassemble-borken-mobile-phone-going-repair-motherboard-sitting-his-workplace-laboratory-with-needed-equipment_343059-485.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph"
+    },
+    {
+        "id": 4,
+        "name": "Tablet Repair",
+        "title": "Repairs for most tablet computers. Because of their small size and frequent use of adhesive, tablet repair is often more involved than laptop repair.",
+        "img": "https://img.freepik.com/free-photo/male-technician-examining-mother-board-with-digital-multimeter_23-2147922353.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph"
+    },
+    {
+        "id": 5,
+        "name": "Data Recovery",
+        "title": "Have you ever lost important data from your PC? We at 7 Data Recovery have prepared a data recovery guide for beginners that explains the entire process.",
+        "img": "https://img.freepik.com/free-photo/businesswoman-networking-using-digital-devices_53876-101875.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph"
+    },
+    {
+        "id": 6,
+        "name": "Wash Device",
+        "title": "Are you searching a cleaner for your device? If you are interested to wash any device, you must come to our office. we will gives you guide to clean your device.",
+        "img": "https://img.freepik.com/free-photo/woman-cleaning-hands-with-hand-sanitizer-gel-prevent-coronavirus-contamination_53876-165198.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph"
+    }
+]

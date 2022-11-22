@@ -1,0 +1,15 @@
+.claint-card {
+    padding: 20px;
+    border: 1px solid rgb(221, 209, 209);
+
+}
+
+.claint-card:hover {
+    box-shadow: 2px 1px 5px gray;
+}
+
+.claint-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

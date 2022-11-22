@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://img.freepik.com/free-photo/portrait-joyful-young-man-white-shirt_171337-17467.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "John Smith",
+        "said": "Easy to work with! Purchased a used iPhone that Joe fixed up. Reasonable rates and he set up the whole thing for me in a short amount of time! I highly recommend to visit them.",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "img": "https://img.freepik.com/free-photo/smiling-man-white-shirt-typing-text-message-scrolling-feed-social-network-using-smartphone-gray_171337-634.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "Abir Ahmed",
+        "said": "Quick and flawless. The back of my iPhone 12 Pro was broken and they made it look like the the original phone. They know a lot about mobile phones and the repair process.",
+        "rating": 4.4
+    },
+    {
+        "id": 3,
+        "img": "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "Nadiya Sultana",
+        "said": "With just a phone call, Joe was able to work with my hectic schedule to get me in.  He fixed my screen within minutes and even offered me a couch to sit on and work in during the repair.",
+        "rating": 4.8
+    },
+    {
+        "id": 4,
+        "img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "Rafayet Safi",
+        "said": "Easy to work with! Purchased a used iPhone that Joe fixed up. Reasonable rates and he set up the whole thing for me in a short amount of time! I highly recommend to visit them.",
+        "rating": 4.9
+    },
+    {
+        "id": 5,
+        "img": "https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "Suraiya Akter",
+        "said": " Very quick turn around and my pc works like new. Would definitely use them again for another device repair.And thanks a lot for the well servicing.I highly recomended them.",
+        "rating": 4.3
+    },
+    {
+        "id": 6,
+        "img": "https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?size=626&ext=jpg&uid=R73666718&ga=GA1.2.679012492.1669006221&semt=sph",
+        "name": "Ismail Raju",
+        "said": " Joe and Ryan are the best. They are very personable and have rescued me quickly from any iPhone disaster or help I’ve needed over the years.",
+        "rating": 4.7
+    }
+]
