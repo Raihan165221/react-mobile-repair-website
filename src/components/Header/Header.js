@@ -23,6 +23,12 @@ const Header = () => {
                             <NavLink style={({ isActive }) =>
                                 isActive ? activeStyle : undefined
                             } to='/services'>Services</NavLink>
+                            <NavLink style={({ isActive }) =>
+                                isActive ? activeStyle : undefined
+                            } to='/about'>About</NavLink>
+                            <NavLink style={({ isActive }) =>
+                                isActive ? activeStyle : undefined
+                            } to='/contact'>Contact</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
