@@ -1,17 +1,26 @@
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink } from "react-router-dom";
+import auth from '../../firebase.init';
 import './Header.css'
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     let activeStyle = {
         color: '#03fff3',
         fontWeight: 'bold'
     };
     return (
         <div>
-            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar className='custom-container' fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home"><FontAwesomeIcon icon={faScrewdriverWrench}></FontAwesomeIcon> Solve-It</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -29,6 +38,14 @@ const Header = () => {
                             <NavLink style={({ isActive }) =>
                                 isActive ? activeStyle : undefined
                             } to='/contact'>Contact</NavLink>
+                            {
+                                user ?
+                                    <NavLink style={{ border: '1px solid red' }} className="text-danger px-3 w-25 text-center" onClick={handleSignOut}>Sign Out</NavLink>
+                                    :
+                                    <NavLink style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    } to='/login'>Log In</NavLink>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

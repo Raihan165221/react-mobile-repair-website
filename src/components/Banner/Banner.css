@@ -9,7 +9,7 @@
 
 }
 
-#hire-us {
+#banner-img a {
     background-color: white;
     color: black;
     padding: 10px 35px;
@@ -18,10 +18,11 @@
     border: 1px solid gray;
     border-radius: 30px;
     margin-top: 15px;
+    text-decoration: none;
     transition: all 0.4s ease;
 }
 
-#hire-us:hover {
+#banner-img a:hover {
     color: white;
     box-shadow: 2px 0px 5px black;
     border: none;

@@ -8,3 +8,10 @@
 .custom-nav:hover {
     color: white;
 }
+
+@media only screen and (max-width: 900px) {
+    .custom-nav a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

@@ -12,7 +12,7 @@ const Footer = () => {
                     <p>© Designed & Developed By Raihan</p>
                 </Col>
                 <Col>
-                    <p><FontAwesomeIcon className='me-2 text-danger' size='lg' icon={faLocationDot}></FontAwesomeIcon> 444 S. Cedros Ave Dhaka</p>
+                    <p><FontAwesomeIcon className='me-2 text-danger' size='lg' icon={faLocationDot}></FontAwesomeIcon>Level-4, Gulshan, Dhaka</p>
                     <p><FontAwesomeIcon className='me-2 text-danger' size='lg' icon={faPhone}></FontAwesomeIcon> +9999999999</p>
                     <p><FontAwesomeIcon className='me-2 text-danger' size='lg' icon={faEnvelope}></FontAwesomeIcon> fixit123@gmail.com</p>
                 </Col>
