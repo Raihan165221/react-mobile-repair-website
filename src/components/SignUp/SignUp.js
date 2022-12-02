@@ -3,6 +3,9 @@ import { Form, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+
+const provider = new GoogleAuthProvider();
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
@@ -36,6 +39,15 @@ const SignUp = () => {
         }
         createUserWithEmailAndPassword(email, password);
     }
+    const signInUsingGoogle = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                navigate('/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
     return (
         <div className='w-75 pt-5 mt-5 mx-auto'>
             <Form onSubmit={handleCreateAccount}>
@@ -64,7 +76,7 @@ const SignUp = () => {
             <div className='w-75 mx-auto text-center mb-4'>
                 <p className='text-center mt-4'>Already have an Account? <Link to='/login'> Please Log In</Link></p>
                 <p>--------or--------</p>
-                <Button variant='warning' size='lg'>Sign In With Google</Button>
+                <Button onClick={signInUsingGoogle} variant='warning' size='lg'>Sign In With Google</Button>
             </div>
         </div>
     );

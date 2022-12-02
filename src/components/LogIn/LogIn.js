@@ -1,8 +1,12 @@
+
 import React, { useState } from 'react';
 import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+
+const provider = new GoogleAuthProvider();
 
 const LogIn = () => {
     const [email, setEmail] = useState('');
@@ -18,7 +22,7 @@ const LogIn = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    let from = location.state?.from?.pathname || "/services";
+    let from = location.state?.from?.pathname || "/";
 
     if (user) {
         navigate(from, { replace: true });
@@ -32,6 +36,15 @@ const LogIn = () => {
     const handleSubmit = event => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
+    }
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                navigate('/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
     return (
         <div className='w-75 pt-5 mt-5 mx-auto'>
@@ -60,7 +73,7 @@ const LogIn = () => {
             <div className='w-75 mx-auto text-center mb-4'>
                 <p className='text-center mt-4'>New to Fix-It? <Link to='/signup'>Create New Account</Link></p>
                 <p>--------or--------</p>
-                <Button variant='warning' size='lg'>Sign In With Google</Button>
+                <Button onClick={handleGoogleSignIn} variant='warning' size='lg'>Sign In With Google</Button>
             </div>
         </div>
     );

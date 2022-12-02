@@ -40,7 +40,10 @@ const Header = () => {
                             } to='/contact'>Contact</NavLink>
                             {
                                 user ?
-                                    <NavLink style={{ border: '1px solid red' }} className="text-danger px-3 w-25 text-center" onClick={handleSignOut}>Sign Out</NavLink>
+                                    <div>
+                                        <span className='text-secondary user-name ms-4'>{user.displayName}</span>
+                                        <NavLink style={{ border: '1px solid red' }} className="text-danger px-3 w-25 text-center" onClick={handleSignOut}>Sign Out</NavLink>
+                                    </div>
                                     :
                                     <NavLink style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
