@@ -2,7 +2,7 @@ import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink } from "react-router-dom";
 import auth from '../../firebase.init';
@@ -19,7 +19,7 @@ const Header = () => {
     };
     return (
         <div>
-            <Navbar className='custom-container' fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar className='custom-container' fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home"><FontAwesomeIcon icon={faScrewdriverWrench}></FontAwesomeIcon> Solve-It</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

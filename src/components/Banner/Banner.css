@@ -1,3 +1,19 @@
 .banner-img img {
     height: 500px;
 }
+
+.banner-text a {
+    text-decoration: none;
+    background-color: white;
+    padding: 4px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.banner-text a:hover {
+    background-color: rgb(22, 22, 22);
+    box-shadow: wpx 0ps 5px gray;
+    color: white;
+}
